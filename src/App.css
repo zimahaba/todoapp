@@ -1,38 +1,91 @@
-.App {
-  text-align: center;
+.app {
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 8px;
+  margin: 5rem auto;
+  padding: 20px;
+  max-width: 400px;
+  min-height: 200px;
   display: flex;
   flex-direction: column;
+}
+
+.title {
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+}
+
+.labelContainer {
+  padding: 0 5px;
+}
+
+.input {
+  width: 100%;
+  font-size: large;
+  border: 1px solid;
+  border-color: #c3c3c3;
+  border-radius: 4px;
+}
+
+.addButton {
+  min-width: 40px;
+  margin-left: 3px;
+  border-radius: 4px;
+  border: none;
+  background-image: url('./assets/add-icon.png');
+  cursor: pointer;
+}
+
+.list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.listItem {
+  background-color: #ebebeb;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+}
+
+.itemContainer {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.removeButtonHidden {
+  width: 40px;
+  height: 100%;
+  margin-left: 3px;
+  background-color: #ebebeb;
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.removeButtonShown {
+  width: 40px;
+  height: 100%;
+  margin-left: 3px;
+  background-image: url('./assets/trash-icon.png');
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  cursor: pointer;
 }
